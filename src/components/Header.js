@@ -2,14 +2,14 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
-import AdbIcon from '@mui/icons-material/Adb';
 
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 function Header() {
     return (
         <div>
             <AppBar position="static">
                 <Container style={{ display: 'flex', alignItems: 'center', padding: '20px 0' }}>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <TipsAndUpdatesIcon />
                     <Typography
                         variant="h6"
                         noWrap
@@ -17,7 +17,7 @@ function Header() {
                         href="/"
                         sx={{
                             mr: 2,
-                            display: { xs: 'none', md: 'flex' },
+                            display: { xs: 'block', md: 'flex' },
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',

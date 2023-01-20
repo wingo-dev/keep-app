@@ -13,3 +13,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.create-note form{
+  background-color: wheat;
+    border-radius: 5px;
+    text-align: center;
+    padding: 19px 0;
+}
+.create-note input{
+  width:450px;
+}
+@media(max-width:860px){
+  .create-note input{
+    width:auto;
+  } 
+}

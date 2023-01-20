@@ -4,6 +4,8 @@ import Footer from './Footer';
 import CreateNote from './CreateNote';
 import Notes from './Notes';
 import { Container } from "@mui/material";
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
 
 function App() {
     return (
@@ -11,7 +13,22 @@ function App() {
             <Header />
             <Container fixed style={{ minHeight: '100vh', padding: '30px 0' }}>
                 <CreateNote />
-                <Notes />
+                <Divider sx={{ mt: 2, mb: 2, color: 'white', borderWidth: 'thick', borderColor: 'white' }} />
+
+                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    <Grid item xs={2} sm={4} md={4} >
+                        <Notes />
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} >
+                        <Notes />
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} >
+                        <Notes />
+                    </Grid>
+                    <Grid item xs={2} sm={4} md={4} >
+                        <Notes />
+                    </Grid>
+                </Grid>
             </Container>
             <Footer />
         </div>
