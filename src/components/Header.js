@@ -2,8 +2,8 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
-
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+
 function Header() {
     return (
         <div>
@@ -34,4 +34,3 @@ function Header() {
 }
 
 export default Header;
-

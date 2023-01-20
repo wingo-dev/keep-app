@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
@@ -17,5 +17,4 @@ function CreateNotes() {
         </div>
     );
 }
-
 export default CreateNotes;
