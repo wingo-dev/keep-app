@@ -8,7 +8,7 @@ function Header() {
     return (
         <div>
             <AppBar position="static">
-                <Container style={{ display: 'flex', alignItems: 'center', padding: '20px 0' }}>
+                <Container style={{ display: 'flex', alignItems: 'center', padding: '20px 10px' }}>
                     <TipsAndUpdatesIcon />
                     <Typography
                         variant="h6"
