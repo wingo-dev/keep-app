@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
-function Notes() {
+function Notes(props) {
     return (
         <Card >
             <CardMedia
@@ -26,7 +26,6 @@ function Notes() {
                     <Button variant="contained" sx={{ mt: 2 }} ><DeleteIcon /></Button>
                 </div>
             </CardContent>
-
         </Card >
     );
 }
