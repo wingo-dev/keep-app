@@ -6,6 +6,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 function Notes(props) {
+    function handleClick() {
+        props.onDelete(props.id);
+    }
     return (
         <Card >
             <CardMedia
@@ -16,14 +19,13 @@ function Notes(props) {
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Lizard
-                    </Typography>
+                    {props.title}
+                </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                    </Typography>
+                    {props.content}
+                </Typography>
                 <div style={{ textAlign: 'right' }}>
-                    <Button variant="contained" sx={{ mt: 2 }} ><DeleteIcon /></Button>
+                    <Button variant="contained" sx={{ mt: 2 }} onClick={handleClick}><DeleteIcon /></Button>
                 </div>
             </CardContent>
         </Card >
